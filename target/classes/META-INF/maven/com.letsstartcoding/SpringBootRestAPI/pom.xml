@@ -53,9 +53,17 @@
   				<plugin>
   				      <groupId>org.springframework.boot</groupId>
          			  <artifactId>spring-boot-maven-plugin</artifactId>
-  				
   				</plugin>
-  		</plugins>
+  				  				
+  				<plugin>
+					        <artifactId>maven-compiler-plugin</artifactId>
+					        <version>3.1</version>
+					        <configuration>
+					            <fork>true</fork>
+					        </configuration>
+    			</plugin>
+
+  			</plugins>
     <finalName>SpringBootRestAPI</finalName>
   </build>
 </project>
